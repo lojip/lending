@@ -18,10 +18,10 @@
     --blue: #4F9CF7;
     --blue-light: #7BB8FF;
     --blue-dark: #3578d8;
-    --purple: #A855F7;
+    --sky: #38BDF8;
     --neon-blue: #00B4D8;
-    --gradient-1: linear-gradient(135deg, #4F9CF7 0%, #A855F7 100%);
-    --gradient-2: linear-gradient(135deg, #00B4D8 0%, #4F9CF7 50%, #A855F7 100%);
+    --gradient-1: linear-gradient(135deg, #4F9CF7 0%, #38BDF8 100%);
+    --gradient-2: linear-gradient(135deg, #0EA5E9 0%, #4F9CF7 50%, #7DD3FC 100%);
     --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.05);
     --shadow-card: 0 8px 40px rgba(79, 156, 247, 0.08);
     --shadow-card-hover: 0 12px 48px rgba(79, 156, 247, 0.14);
@@ -99,7 +99,7 @@ ul {
 .bg-orb-2 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
     bottom: 20%;
     left: -150px;
     animation: floatOrb2 25s ease-in-out infinite;
@@ -159,18 +159,24 @@ ul {
 }
 
 /* --- Logo --- */
-.logo-img {
-    height: 28px;
+.logo-icon-img {
+    height: 32px;
     width: auto;
-    /* SVG is white, invert to dark for light theme */
     filter: brightness(0) saturate(100%);
     transition: var(--transition);
 }
 
-.app-logo-img {
-    height: 36px;
+.logo-text {
+    font-family: 'Manrope', var(--font);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.app-logo-icon-img {
+    height: 40px;
     width: auto;
-    /* Keep white for dark phone screen */
     filter: none;
 }
 
@@ -1158,14 +1164,14 @@ section {
 .preview-article-avatar {
     width: 24px;
     height: 24px;
-    background: rgba(168, 85, 247, 0.15);
+    background: rgba(56, 189, 248, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.45rem;
     font-weight: 700;
-    color: var(--purple);
+    color: var(--sky);
     flex-shrink: 0;
 }
 
@@ -1229,8 +1235,8 @@ section {
 }
 
 .preview-status-card.premium {
-    border-color: rgba(168, 85, 247, 0.25);
-    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(56, 189, 248, 0.25);
+    background: rgba(56, 189, 248, 0.05);
 }
 
 .preview-status-badge {
@@ -1382,13 +1388,13 @@ section {
 }
 
 .pricing-card-premium {
-    border-color: rgba(168, 85, 247, 0.15);
+    border-color: rgba(56, 189, 248, 0.15);
     background: rgba(255, 255, 255, 0.8);
 }
 
 .pricing-card-premium:hover {
-    border-color: rgba(168, 85, 247, 0.3);
-    box-shadow: 0 12px 48px rgba(168, 85, 247, 0.1);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 12px 48px rgba(56, 189, 248, 0.1);
 }
 
 .pricing-popular {
@@ -1507,7 +1513,7 @@ section {
 .cta-orb-2 {
     width: 300px;
     height: 300px;
-    background: rgba(168, 85, 247, 0.08);
+    background: rgba(56, 189, 248, 0.08);
     bottom: -100px;
     right: -100px;
 }
@@ -1684,11 +1690,11 @@ section {
 
 /* --- Hover glow on feature cards --- */
 .feature-card:nth-child(1):hover { box-shadow: 0 12px 48px rgba(79, 156, 247, 0.1); }
-.feature-card:nth-child(2):hover { box-shadow: 0 12px 48px rgba(123, 97, 255, 0.08); }
-.feature-card:nth-child(3):hover { box-shadow: 0 12px 48px rgba(168, 85, 247, 0.08); }
+.feature-card:nth-child(2):hover { box-shadow: 0 12px 48px rgba(56, 189, 248, 0.08); }
+.feature-card:nth-child(3):hover { box-shadow: 0 12px 48px rgba(56, 189, 248, 0.08); }
 .feature-card:nth-child(4):hover { box-shadow: 0 12px 48px rgba(0, 180, 216, 0.08); }
 .feature-card:nth-child(5):hover { box-shadow: 0 12px 48px rgba(79, 156, 247, 0.08); }
-.feature-card:nth-child(6):hover { box-shadow: 0 12px 48px rgba(168, 85, 247, 0.08); }
+.feature-card:nth-child(6):hover { box-shadow: 0 12px 48px rgba(56, 189, 248, 0.08); }
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
